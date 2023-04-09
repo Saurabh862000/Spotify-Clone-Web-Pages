@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#nav {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#nav > article {
+  height: 80px;
+  width: 90%;
+  /* border: 2px solid red; */
+  display: flex;
+}
+#nav > article > .logo {
+  height: 80px;
+  width: 50%;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+}
+#nav > article > .logo > svg {
+  width: 36%;
+  fill: white;
+  padding-left: 117px;
+}
+#nav > article > .menu {
+  height: 80px;
+  width: 40%;
+  padding-left: 70px;
+
+  /* padding-right: 10px; */
+  /* background-color: aquamarine; */
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* color: antiquewhite; */
+}
+#nav > article > .menu > ol {
+  height: 80px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+#nav > article > .menu > ol > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+}
+#A {
+  height: 600px;
+  width: 100%;
+}
+.bg > img {
+  height: 600px;
+  width: 1500px;
+  display: inline;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+.bg {
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(rgb(190, 50, 148), rgb(73, 5, 79));
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-overlay {
+  position: absolute;
+  top: 45%;
+  left: 57%;
+  transform: translate(-36%, -47%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -2.56px;
+  max-width: 653px;
+}
+.mobile {
+  position: absolute;
+  top: 51%;
+  left: 20%;
+  transform: translate(-36%, -47%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  max-width: 653px;
+  height: 460px;
+  width: 250px;
+  border-top: 60px solid white;
+  /* border-bottom: 60px solid rgb(214, 30, 30); */
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  background: url(./mobile.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  margin: 50px 50px;
+  /* -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px; */
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* .mobile::after {
+  position: absolute;
+  content: "";
+  left: 34%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: outset white;
+  bottom: -40px;
+} */
+.mobile::before {
+  position: absolute;
+  content: "";
+  left: 40%;
+  width: 60px;
+  height: 4px;
+  background: black;
+  /* -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; */
+  border-radius: 10px;
+  top: -30px;
+}
+.ton > button > a {
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  transform: translate(-36%, -47%);
+  /* transform: scale(1.1); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: black;
+  background-color: antiquewhite;
+  height: 50px;
+  width: 14%;
+  font-size: 15px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 653px;
+  -webkit-box-pack: center;
+  border-radius: 30px;
+}
+#B {
+  height: 600px;
+  width: 100%;
+  background-color: white;
+}
+#B > h1 {
+  max-width: 670px;
+
+  font-size: var(--headline-font-size, 40px);
+  line-height: var(--headline-line-height, 46px);
+  letter-spacing: -0.015em;
+  font-weight: 940;
+  padding: 60px;
+  margin-inline-start: 35%;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column > h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.column > p {
+  text-align: center;
+  padding-top: 10px;
+}
+.row {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  /* clear: both; */
+}
+.logo > img {
+  width: 150px;
+}
+.logo {
+  text-align: center;
+}
+.media > img {
+  width: 150px;
+}
+.media {
+  text-align: center;
+}
+.make > img {
+  width: 150px;
+}
+.make {
+  text-align: center;
+}
+.save > img {
+  width: 150px;
+}
+.save {
+  text-align: center;
+}
+#C {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(rgb(192, 71, 194), rgb(95, 9, 225));
+}
+#C > h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 150px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  /* padding: 0px 15px 80px; */
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -2.56px;
+}
+#D {
+  height: 460px;
+  width: 100%;
+}
+.ready > img {
+  height: 460px;
+  width: 1500px;
+  display: inline;
+}
+.ready {
+  height: 460px;
+  width: 100%;
+  background-image: linear-gradient(rgb(190, 50, 148), rgb(73, 5, 79));
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-Read {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-36%, -47%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+
+  font-size: 64px;
+  font-weight: bold;
+
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -2.56px;
+  max-width: 653px;
+}
+.but > button > a {
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  transform: translate(-36%, -47%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: black;
+  background-color: antiquewhite;
+  height: 50px;
+  width: 14%;
+  font-size: 15px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 653px;
+  -webkit-box-pack: center;
+  border-radius: 30px;
+}
+#E {
+  height: 600px;
+  width: 100%;
+}
+#E > h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  padding-top: 50px;
+}
+#F {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+}
+#F > footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+#F > .row > .column {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+#F > .row > .column > h2 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+#F > .row > .column > p {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+#F > .row {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Clear floats after the columns */
+#F > .row:after {
+  content: "";
+  display: table;
+  /* clear: both; */
+}
+#F > marquee > img {
+  height: 130px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* padding-left: 0px;
+  padding-right: 10px; */
+}
+#F > .logo {
+  height: 80px;
+  width: 50%;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+}
+#F > .logo > svg {
+  width: 36%;
+  fill: green;
+  padding-left: 117px;
+}
